@@ -7,8 +7,23 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <img src="home.png" class="home" onclick="window.location.href='index.html'">
     <h1>Particles</h1>
-    <h3>The Quiz</h3>
+    <br><br><br><br>
+    <div class="app">
+        <h1>Particle quiz</h1>
+        <div class="quiz">
+            <h2 id="question">Question</h2>
+                <div id="answer-buttons">
+                    <button class="btn">Ans 1</button>
+                    <button class="btn">Ans 2</button>
+                    <button class="btn">Ans 3</button>
+                    <button class="btn">Ans 4</button>
+                </div>
+                <button id="next-btn">next</button>
+        </div>
+    </div>
     <br>
     <button class="accordion">About Particles</button>
     <div class="panel">
