@@ -45,7 +45,7 @@ body {
     cursor: pointer;
 }
 
-button {
+.links {
     color: rgb(36, 85, 158);
     border-color: rgb(36, 85, 158);
     border: 1px solid;
@@ -53,17 +53,12 @@ button {
 }
 
 .accordion {
-  background-color: rgb(41, 126, 139);
-  cursor: pointer;
-  padding: 18px;
-  width: 300px;
-  border: 2px solid rgb(36, 85, 158);
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-  margin-left: 10px;
-  margin-right: 10px;
+    background-color: rgba(84, 132, 199, 1);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
 }
 
 .active, .accordion:hover {
@@ -71,7 +66,6 @@ button {
 }
 
 .panel {
-  padding: 5px;
   display: none;
   overflow: hidden;
 }
@@ -126,7 +120,7 @@ button {
     cursor: no-drop;
 }
 
-#next-btn {
+#next-btn, #enter-btn {
     background: #001e4d;
     color: #fff;
     font-weight: 500;
