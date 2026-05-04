@@ -10,18 +10,18 @@
 
     <img src="home.png" class="home" onclick="window.location.href='index.html'">
     <h1>Particles</h1>
-    <br><br><br><br>
     <div class="app">
-        <h1>Particle quiz</h1>
         <div class="quiz">
+            <div class="progress-container">
+    <div id="progress-bar"></div>
+</div>
             <h2 id="question">Question</h2>
-                <div id="answer-buttons">
-                    <button class="btn">Ans 1</button>
-                    <button class="btn">Ans 2</button>
-                    <button class="btn">Ans 3</button>
-                    <button class="btn">Ans 4</button>
-                </div>
-                <button id="next-btn">next</button>
+            <input id="search" type="text" placeholder="Type your answer here">
+            <button id="enter-btn">Enter</button>
+            <div id="feedback"></div>
+            <div id="answer-buttons">
+            </div>
+            <button id="next-btn">next</button>
         </div>
     </div>
     <br>
