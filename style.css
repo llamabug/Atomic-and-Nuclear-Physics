@@ -1,11 +1,15 @@
 h1 {
     padding-top: 7%;
-    margin: 0;
+    margin: 0px;
     font-family: Vast Shadow, serif;
     font-size: 50px;
     font-weight: 400;
     font-style: normal;
     color: rgb(36, 85, 158);
+}
+
+h2 {
+    margin: 30px;
 }
 
 
@@ -14,11 +18,14 @@ h3 {
     color: rgb(41, 126, 139);
 }
 
-html, body {
-    min-height: 100%;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
 }
 
 body {
@@ -43,6 +50,8 @@ body {
     height: 60px;
     z-index: 45;
     cursor: pointer;
+    width: auto;
+    object-fit: contain;
 }
 
 .links {
@@ -59,15 +68,28 @@ body {
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 30px;
+    border: none;
 }
 
-.active, .accordion:hover {
+.accordion:hover {
   background-color: rgb(241, 126, 139); 
+}
+
+.accordion.active {
+    border-radius: 10px 10px 0 0;
 }
 
 .panel {
   display: none;
   overflow: hidden;
+  background-color: rgba(84, 132, 199, 1);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+    border: none;
 }
 
 .app {
@@ -79,14 +101,6 @@ body {
     padding: 30px;
 }
 
-.app h1 {
-    font-size: 25px;
-    color: #001e4d;
-    font-weight: 600;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
-    font-family: 'Courier New', Courier, monospace;
-}
 
 .quiz {
     padding: 20px 0;
@@ -138,4 +152,49 @@ body {
 
 .incorrect {
     background: #ff9393;
+}
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}  
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #001e4d;
+    transition: width 0.3s ease;
+}
+
+.feedback {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 6px;
+    min-height: 40px;
+    font-weight: 500;
+}
+
+.feedback.correct {
+    background: rgb(150, 184, 231);
+}
+.feedback.incorrect {
+    background: #ff9393;
+    color: #5c0a0a;
+}
+
+#answer-buttons {
+    display: block;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #222;
+    font-size: 16px;
 }
