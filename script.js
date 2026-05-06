@@ -16,15 +16,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 const questions = [
-    { question: "What is the charge on an alpha particle?", 
-        answers: [ {text: "+2", correct: true}, {text: "+1", correct: false}, {text: "-1", correct: false}, {text: "-2", correct: false}, ], 
+
+    { question: "What is the charge on an alpha particle?",
+    type: "input",
+    answers: ["+2", "2+", "positive 2", "positive two"]
+    },
+
+    { question: "What is the charge on a beta particle?",
+    type: "input",
+    answers: ["-1", "1-", "-", "negative 1", "negative one"]
+    },
+
+    { question: "What is the charge on an atom?",
+    type: "input",
+    answers: ["0", "zero", "no charge", "nothing",]
+    },
+
+    { question: "What is the atomic number?", 
+        answers: [ {text: "the charge of an atom's nucleus", correct: true}, {text: "the overall charge of an atom", correct: false}, {text: "the mass of an atom", correct: false}, {text: "the number of neutrons in an atom", correct: false}, ], 
         type: "option",
     }, 
 
-    { question: "What is the charge on an beta particle?", 
-        answers: [ {text: "+2", correct: false}, {text: "+1", correct: false}, {text: "-1", correct: true}, {text: "-2", correct: false}, ], 
+    { question: "What is the mass number?", 
+        answers: [ {text: "the number of protons in an atom", correct: false}, {text: "the number of an atom on the periodic table", correct: false}, {text: "the number of protons + neutrons in an atom", correct: true}, {text: "the charge of an atom's nucleus", correct: false}, ], 
         type: "option",
     },
+
+    { question: "What is an alpha particle?",
+    type: "input",
+    answers: ["a helium nucleus", "helium nucleus", "he nucleus", "helium nuclei", "he nuclei"]
+    },
+
+    { question: "What is a beta particle?",
+    type: "input",
+    answers: ["an electron", "electron", "e"]
+    },
+
+    { question: "What is a gamma ray?", 
+        answers: [ {text: "the nucleus of an atom", correct: false}, {text: "an electromagnetic wave", correct: true}, {text: "a very fast atom", correct: false}, {text: "a neutral particle with almost no mass", correct: false}, ], 
+        type: "option",
+    }, 
 
     { question: "Which particle is most ionising?", 
         answers: [ {text: "alpha", correct: true}, {text: "beta", correct: false}, {text: "gamma", correct: false}, {text: "neutrons", correct: false}, ], 
@@ -36,25 +67,17 @@ const questions = [
         type: "option",
     }, 
 
-    { question: "Which particle isnin't most penetrating?", 
-        answers: [ {text: "alpha", correct: false}, {text: "beta", correct: false}, {text: "gamma", correct: true}, {text: "neutrons", correct: false}, ], 
+    { question: "Which is the Thomson (AKA plum pudding) atomic model?", 
+        answers: [ {text: "a cube with electrons at each corner", correct: false}, {text:"a postive center surrounded by electrons revolving like Saturn's rings", correct: false}, {text: "electrons in a positive sphere", correct: true}, {text: "A positve nucleus with electrons around it", correct: false}, ], 
         type: "option",
     }, 
 
-    { question: "What is an alpha particle?",
-    type: "input",
-    answers: ["a helium nucleus", "helium nucleus", "he nucleus", "helium nuclei", "he nuclei"]
-    },
+    { question: "Which is the Rutherford atomic model?", 
+        answers: [ {text: "a cube with electrons at each corner", correct: false}, {text:"a positive center surrounded by electrons revolving like Saturn's rings", correct: false}, {text: "electrons in a positive sphere", correct: false}, {text: "A positive nucleus with electrons around it", correct: true}, ], 
+        type: "option",
+    }, 
 
-    { question: "What is an beta particle?",
-    type: "input",
-    answers: ["an electron", "electron", "e"]
-    },
-
-    { question: "What is an alpha particle?",
-    type: "input",
-    answers: ["a helium nucleus", "helium nucleus", "he nucleus", "helium nuclei", "he nuclei"]
-    },
+    
 
 ];
 
