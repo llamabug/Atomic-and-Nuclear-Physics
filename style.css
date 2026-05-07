@@ -198,3 +198,16 @@ body {
     border: 1px solid #222;
     font-size: 16px;
 }
+
+
+.resource {
+  overflow: hidden;
+  background-color: rgba(84, 132, 199, 1);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+    border: none;
+}
