@@ -238,3 +238,14 @@ nextButton.addEventListener("click", () => {
 });
 
 enterButton.addEventListener("click", checkInputAnswer);
+
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    if (enterButton.style.display !== "none") {
+      checkInputAnswer();
+    } else if (nextButton.style.display !== "none") {
+      handleNextButton();
+    }
+  }
+});
