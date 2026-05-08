@@ -93,6 +93,10 @@ hr {
     
 }
 
+.links:hover {
+    cursor: pointer;
+}
+
 .app {
     background-color: rgba(84, 132, 199, 1);
     width: 90%;
