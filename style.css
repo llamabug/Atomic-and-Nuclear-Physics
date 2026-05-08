@@ -16,6 +16,18 @@ h2 {
 h3 {
     font-size: 30px;
     color: rgb(41, 126, 139);
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 25px;
+    color: white;
+}
+
+p {
+    color: white;
+    margin: auto;
+    margin-right: 25px;
 }
 
 * {
@@ -39,8 +51,20 @@ body {
         rgba(36, 85, 158, 1) 100%);
 }
 
+a {
+    text-decoration: none;
+}
+
+hr {
+    height: 4px;
+    background-color: rgb(36, 85, 158);
+    width: 72%;
+    margin: auto;
+}
+
 .atom {
     height: 300px;
+    margin: 30px;
 }
 
 .home {
@@ -54,42 +78,19 @@ body {
     object-fit: contain;
 }
 
+
 .links {
     color: rgb(36, 85, 158);
     border-color: rgb(36, 85, 158);
     border: 1px solid;
     font-size: 15px;
-}
-
-.accordion {
-    background-color: rgba(84, 132, 199, 1);
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
     border-radius: 10px;
-    padding: 30px;
-    border: none;
-}
-
-.accordion:hover {
-  background-color: rgb(241, 126, 139); 
-}
-
-.accordion.active {
-    border-radius: 10px 10px 0 0;
-}
-
-.panel {
-  display: none;
-  overflow: hidden;
-  background-color: rgba(84, 132, 199, 1);
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    margin-top: 0;
-    border-radius: 0 0 10px 10px;
-    padding: 30px;
-    border: none;
+    background-color: rgb(200, 217, 242);
+    
 }
 
 .app {
@@ -201,13 +202,14 @@ body {
 
 
 .resource {
-  overflow: hidden;
-  background-color: rgba(84, 132, 199, 1);
+    overflow: hidden;
+    background-color: rgba(84, 132, 199, 1);
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
-    margin-top: 0;
-    border-radius: 0 0 10px 10px;
-    padding: 30px;
+    margin: 40px auto;
+    border-radius: 10px;
+    padding: 25px;
     border: none;
+    display: flex;
+    gap: 40px;
 }
